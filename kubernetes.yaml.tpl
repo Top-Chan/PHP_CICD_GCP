@@ -15,18 +15,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-cloudbuild
+  name: test-php
   labels:
-    app: hello-cloudbuild
+    app: test-php
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-cloudbuild
+      app: test-php
   template:
     metadata:
       labels:
-        app: hello-cloudbuild
+        app: test-php
     spec:
       containers:
       - name: hello-cloudbuild

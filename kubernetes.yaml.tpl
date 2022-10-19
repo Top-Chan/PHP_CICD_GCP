@@ -29,8 +29,8 @@ spec:
         app: test-php
     spec:
       containers:
-      - name: hello-cloudbuild
-        image: us-central1-docker.pkg.dev/GOOGLE_CLOUD_PROJECT/my-repository/hello-cloudbuild:COMMIT_SHA
+      - name: test-php
+        image: us-central1-docker.pkg.dev/GOOGLE_CLOUD_PROJECT/my-repository/test-php:COMMIT_SHA
         ports:
         - containerPort: 8080
 ---

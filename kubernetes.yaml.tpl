@@ -37,10 +37,10 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: hello-cloudbuild
+  name: test-php
 spec:
   selector:
-    app: hello-cloudbuild
+    app: test-php
   ports:
   - protocol: TCP
     port: 80
